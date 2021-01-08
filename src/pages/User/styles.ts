@@ -1,16 +1,22 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
   padding: 20px 80px;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & + li {
+      margin-top: 10px;
+    }
+  }
 
   button {
     text-align: center;
-    width: 120px;
-    height: 40px;
+    height: 20px;
+    width: 80px;
     border-radius: 8px;
     text-decoration: none;
     color: #fff;
@@ -23,20 +29,13 @@ export const Container = styled.div`
       color: #333;
       background-color: #eee;
     }
-  }
 
-  .cancel {
-    color: #ff3333;
-    background-color: #eee;
-    transition: color 0.4s;
-
-    &:hover {
-      color: #fff;
-      background-color: #ff3333;
+    & + button {
+      margin-left: 10px;
     }
-  }
 
-  @media only screen and (max-width: 500px) {
-    padding: 8px 20px;
+    @media only screen and (max-width: 500px) {
+      padding: 8px 20px;
+    }
   }
 `;

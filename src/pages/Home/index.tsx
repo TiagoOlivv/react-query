@@ -3,6 +3,7 @@ import React from 'react';
 import { Container } from './styles';
 
 import Header from '../../components/Header';
+import { ListUser } from '../User';
 
 const Home: React.FC = () => {
   return (
@@ -12,6 +13,7 @@ const Home: React.FC = () => {
         buttonTitle="Create User"
         route="/create-user"
       />
+      <ListUser />
     </Container>
   );
 };

@@ -7,7 +7,12 @@ import Header from '../../components/Header';
 const Create: React.FC = () => {
   return (
     <Container>
-      <Header title="Create User" button="Unsubscribe" route="/" />
+      <Header
+        title="Create User"
+        buttonTitle="Cancel"
+        buttonClass="cancel"
+        route="/"
+      />
     </Container>
   );
 };

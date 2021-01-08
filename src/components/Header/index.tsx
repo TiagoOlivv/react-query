@@ -5,16 +5,24 @@ import { Container } from './styles';
 
 interface HeaderPros {
   title: string;
-  button?: string;
+  buttonTitle: string;
+  buttonClass?: string;
   route: string;
 }
 
-const Header: React.FC<HeaderPros> = ({ title, button, route }) => {
+const Header: React.FC<HeaderPros> = ({
+  title,
+  buttonTitle,
+  buttonClass,
+  route,
+}) => {
   return (
     <Container>
       <h1>{title}</h1>
       <Link to={route}>
-        <button type="button">{button}</button>
+        <button type="button" className={buttonClass}>
+          {buttonTitle}
+        </button>
       </Link>
     </Container>
   );

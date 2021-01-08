@@ -25,6 +25,17 @@ export const Container = styled.div`
     }
   }
 
+  .cancel {
+    color: #333;
+    background-color: #eee;
+    transition: color 0.4s;
+
+    &:hover {
+      color: #fff;
+      background-color: #ff3333;
+    }
+  }
+
   @media only screen and (max-width: 500px) {
     padding: 8px 20px;
   }

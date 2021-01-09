@@ -5,8 +5,8 @@ import Header from '../../components/Header';
 const Create: React.FC = () => {
   return (
     <Header
-      title="Create User"
-      buttonTitle="Cancel"
+      title="Create"
+      buttonTitle="cancel"
       buttonClass="cancel"
       route="/"
     />

@@ -1,12 +1,15 @@
 import React from 'react';
 
-import { Container } from './styles';
+import Header from '../../components/Header';
 
 const Update: React.FC = () => {
   return (
-    <Container>
-      <h1>Update</h1>
-    </Container>
+    <Header
+      title="Update"
+      buttonTitle="cancel"
+      buttonClass="cancel"
+      route="/"
+    />
   );
 };
 

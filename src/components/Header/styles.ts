@@ -7,36 +7,11 @@ export const Container = styled.div`
   background-color: #fff;
   padding: 20px 80px;
 
-  button {
-    text-align: center;
-    width: 120px;
-    height: 40px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #bebebe;
-    font-weight: bold;
+  @media only screen and (max-width: 600px) {
+    padding: 20px;
 
-    transition: color 0.4s;
-
-    &:hover {
-      color: #333;
-      background-color: #eee;
+    button {
+      width: 90px;
     }
-  }
-
-  .cancel {
-    color: #ff3333;
-    background-color: #eee;
-    transition: color 0.4s;
-
-    &:hover {
-      color: #fff;
-      background-color: #ff3333;
-    }
-  }
-
-  @media only screen and (max-width: 500px) {
-    padding: 8px 20px;
   }
 `;

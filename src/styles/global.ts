@@ -22,5 +22,30 @@ export default createGlobalStyle`
 
   button {
     cursor: pointer;
+
+    text-align: center;
+    width: 120px;
+    height: 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #bebebe;
+    font-weight: bold;
+
+    transition: color 0.4s;
+
+    &:hover {
+      color: #333;
+      background-color: #eee;
+    }
+  }
+
+  .cancel {
+    transition: color 0.4s;
+
+    &:hover {
+      color: #000;
+      background-color: #ff3333;
+    }
   }
 `;

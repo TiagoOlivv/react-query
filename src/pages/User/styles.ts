@@ -1,41 +1,48 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  padding: 20px 80px;
+export const Container = styled.ul`
+  padding: 20px 70px;
 
   li {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #fff;
+    height: 90px;
+    border-radius: 8px;
+
+    padding: 0 10px 0 20px;
 
     & + li {
       margin-top: 10px;
     }
+
+    strong {
+      font-size: 24px;
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        margin-left: 10px;
+      }
+    }
+
+    @media only screen and (max-width: 600px) {
+      button {
+        width: 90px;
+      }
+
+      strong {
+        font-size: 20px;
+      }
+    }
   }
 
-  button {
-    text-align: center;
-    height: 20px;
-    width: 80px;
-    border-radius: 8px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #bebebe;
-    font-weight: bold;
-
-    transition: color 0.4s;
-
-    &:hover {
-      color: #333;
-      background-color: #eee;
-    }
-
-    & + button {
-      margin-left: 10px;
-    }
-
-    @media only screen and (max-width: 500px) {
-      padding: 8px 20px;
-    }
+  @media only screen and (max-width: 600px) {
+    padding: 12px;
   }
 `;

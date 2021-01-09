@@ -8,11 +8,7 @@ import { ListUser } from '../User';
 const Home: React.FC = () => {
   return (
     <Container>
-      <Header
-        title="React Query"
-        buttonTitle="Create User"
-        route="/create-user"
-      />
+      <Header title="React Query" buttonTitle="create" route="/create-user" />
       <ListUser />
     </Container>
   );
